@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+span,
+p {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  line-height: 14px;
+  margin: 0;
+  font-weight: 400;
+  padding: 0;
+}
+
+h5 {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+h4 {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+h3 {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+h2 {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+h1 {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+span.semiBold,
+p.semiBold {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  line-height: 14px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+}
+
+h5.semiBold {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 600;
+}
+
+h4.semiBold {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+h3.semiBold {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+h2.semiBold {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+h1.semiBold {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+span.bold,
+p.bold {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  line-height: 14px;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+
+h5.bold {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+h4.bold {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+h3.bold {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+h2.bold {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+h1.bold {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+:root {
+  /** primary **/
+  --ion-color-primary: #21abd2;
+  --ion-color-primary-rgb: 33, 171, 210;
+  --ion-color-primary-contrast: #000000;
+  --ion-color-primary-contrast-rgb: 0, 0, 0;
+  --ion-color-primary-shade: #1d96b9;
+  --ion-color-primary-tint: #37b3d7;
+
+  /** secondary **/
+  --ion-color-secondary: #1d201f;
+  --ion-color-secondary-rgb: 29, 32, 31;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast-rgb: 255, 255, 255;
+  --ion-color-secondary-shade: #1a1c1b;
+  --ion-color-secondary-tint: #343635;
+
+  /** tertiary **/
+  --ion-color-tertiary: #d6f2f9;
+  --ion-color-tertiary-rgb: 214, 242, 249;
+  --ion-color-tertiary-contrast: #000000;
+  --ion-color-tertiary-contrast-rgb: 0, 0, 0;
+  --ion-color-tertiary-shade: #bcd5db;
+  --ion-color-tertiary-tint: #daf3fa;
+
+  /** success **/
+  --ion-color-success: #478862;
+  --ion-color-success-rgb: 71, 136, 98;
+  --ion-color-success-contrast: #ffffff;
+  --ion-color-success-contrast-rgb: 255, 255, 255;
+  --ion-color-success-shade: #3e7856;
+  --ion-color-success-tint: #599472;
+
+  /** warning **/
+  --ion-color-warning: #ffc409;
+  --ion-color-warning-rgb: 255, 196, 9;
+  --ion-color-warning-contrast: #000000;
+  --ion-color-warning-contrast-rgb: 0, 0, 0;
+  --ion-color-warning-shade: #e0ac08;
+  --ion-color-warning-tint: #ffca22;
+
+  /** danger **/
+  --ion-color-danger: #f1646f;
+  --ion-color-danger-rgb: 241, 100, 111;
+  --ion-color-danger-contrast: #000000;
+  --ion-color-danger-contrast-rgb: 0, 0, 0;
+  --ion-color-danger-shade: #d45862;
+  --ion-color-danger-tint: #f2747d;
+
+  /** dark **/
+  --ion-color-dark: #222428;
+  --ion-color-dark-rgb: 34, 36, 40;
+  --ion-color-dark-contrast: #ffffff;
+  --ion-color-dark-contrast-rgb: 255, 255, 255;
+  --ion-color-dark-shade: #1e2023;
+  --ion-color-dark-tint: #383a3e;
+
+  /** medium **/
+  --ion-color-medium: #5b5b5b;
+  --ion-color-medium-rgb: 91, 91, 91;
+  --ion-color-medium-contrast: #ffffff;
+  --ion-color-medium-contrast-rgb: 255, 255, 255;
+  --ion-color-medium-shade: #505050;
+  --ion-color-medium-tint: #6b6b6b;
+
+  /** light **/
+  --ion-color-light: #ffffff;
+  --ion-color-light-rgb: 255, 255, 255;
+  --ion-color-light-contrast: #000000;
+  --ion-color-light-contrast-rgb: 0, 0, 0;
+  --ion-color-light-shade: #e0e0e0;
+  --ion-color-light-tint: #ffffff;
+
+  --ion-font-family: 'Inter', sans-serif;
+}

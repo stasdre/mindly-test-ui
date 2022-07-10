@@ -1,0 +1,157 @@
+{
+  "name": "mindly-test-ui",
+  "version": "3.2.1",
+  "private": false,
+  "scripts": {
+    "start": "react-scripts start",
+    "clean": "rimraf dist",
+    "build": "rollup -c",
+    "test:ts": "tsc --noEmit --skipLibCheck",
+    "coverage": "npm test -- --env=jsdom --coverage --coverageDirectory=jest-coverage --passWithNoTests",
+    "test:lint": "eslint \"./src/**/*{ts,tsx}\" --ignore-pattern \"*.d.ts\" --fix",
+    "test": "react-scripts test --transformIgnorePatterns 'node_modules/(?!(@ionic/react|@ionic/react-router|@ionic/core|@stencil/core|ionicons)/)'",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
+  },
+  "dependencies": {
+    "-": "^0.0.1",
+    "@babel/polyfill": "^7.12.1",
+    "@capacitor/keyboard": "^1.2.2",
+    "@ionic/react": "^6.1.11",
+    "@ionic/react-router": "^6.1.11",
+    "@storybook/addon-viewport": "^6.3.10",
+    "@storybook/cli": "^6.4.20",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "@types/jest": "^26.0.24",
+    "@types/node": "^12.20.21",
+    "@types/react": "^17.0.27",
+    "@types/react-dom": "^17.0.9",
+    "auto": "^10.32.0",
+    "date-fns": "^2.28.0",
+    "luxon": "^2.4.0",
+    "react": "^17.0.2",
+    "react-day-picker": "^8.0.5",
+    "react-dom": "^17.0.2",
+    "react-refresh": "^0.9.0",
+    "react-scripts": "4.0.3",
+    "styled-components": "^5.3.1",
+    "web-vitals": "^1.1.2"
+  },
+  "peerDependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "@types/jest": "^26.0.24",
+    "@types/node": "^12.20.21",
+    "@types/react-dom": "^17.0.9",
+    "auto": "^10.32.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "styled-components": "^5.3.1",
+    "web-vitals": "^1.1.2"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "typings": "dist/index.d.ts",
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-react",
+        "@babel/env",
+        "react-app",
+        {
+          "absoluteRuntime": false
+        }
+      ]
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-typescript": "^7.15.0",
+    "@ionic/lab": "3.2.10",
+    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-image": "^2.1.1",
+    "@rollup/plugin-node-resolve": "^13.0.5",
+    "@rollup/plugin-replace": "^3.0.0",
+    "@rollup/plugin-typescript": "^8.2.5",
+    "@storybook/addon-actions": "^6.3.7",
+    "@storybook/addon-essentials": "^6.3.7",
+    "@storybook/addon-links": "^6.3.7",
+    "@storybook/node-logger": "^6.3.7",
+    "@storybook/preset-create-react-app": "^3.2.0",
+    "@storybook/react": "^6.3.9",
+    "@svgr/rollup": "^5.5.0",
+    "@types/luxon": "^2.3.2",
+    "@types/styled-components": "^5.1.13",
+    "@typescript-eslint/parser": "^4.30.0",
+    "babel-cli": "^6.26.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.32.0",
+    "eslint-config-google": "^0.14.0",
+    "postcss": "^8.3.8",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.58.0",
+    "rollup-plugin-dts": "^4.0.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.1",
+    "rollup-plugin-react-svg": "^3.0.3",
+    "rollup-plugin-svg-import": "^1.5.1",
+    "rollup-plugin-svg-to-jsx": "^1.0.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-url": "^3.0.1",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.3"
+  },
+  "description": "This test ui lib",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stasdre/mindly-test-ui.git"
+  },
+  "keywords": [
+    "mindlyUiTest"
+  ],
+  "author": "Stanislav Drehval",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stasdre/mindly-test-ui/issues"
+  },
+  "homepage": "https://github.com/stasdre/mindly-test-ui#readme"
+}

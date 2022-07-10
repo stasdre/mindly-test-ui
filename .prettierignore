@@ -1,0 +1,7 @@
+.github
+.idea
+.storybook
+dist
+node_modules
+public
+src/stories
