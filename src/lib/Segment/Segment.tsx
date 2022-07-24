@@ -1,7 +1,12 @@
-import { IonSegmentButton } from '@ionic/react';
+import {IonSegmentButton, setupIonicReact} from '@ionic/react';
 import React, { FC } from 'react';
 import { SegmentLabel, SegmentWrapper } from './Segment.style';
 import { SegmentType } from './types';
+
+setupIonicReact({
+  mode:'ios'
+});
+
 
 type SegmentProps = {
   segments: SegmentType[];
