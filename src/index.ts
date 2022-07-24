@@ -1,9 +1,6 @@
 import {setupIonicReact} from "@ionic/react";
 
-setupIonicReact({
-    mode:'ios'
-});
-
+setupIonicReact();
 
 export { default as Segment } from './lib/Segment';
 export * from './lib/Segment';
